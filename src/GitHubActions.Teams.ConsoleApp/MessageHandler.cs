@@ -40,6 +40,7 @@ namespace Aliencube.GitHubActions.Teams.ConsoleApp
                 Summary = ParseString(options.Summary),
                 Text = ParseString(options.Text),
                 ThemeColor = ParseString(options.ThemeColor),
+                Msteams = ParseCollection<Msteams>(options.Msteams, settings),
                 Sections = ParseCollection<Section>(options.Sections, settings),
                 Actions = ParseCollection<BaseAction>(options.Actions, settings)
             };
