@@ -36,6 +36,12 @@ namespace Aliencube.GitHubActions.Teams.ConsoleApp
         /// </summary>
         [Option("theme-color", Required = false, Default = "", HelpText = "Message theme color")]
         public virtual string ThemeColor { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the string representation of JSON array for the message msteams.
+        /// </summary>
+        [Option("msteams", Required = false, Default = "", HelpText = "JSON for message msteams")]
+        public virtual string Msteams { get; set; }
 
         /// <summary>
         /// Gets or sets the string representation of JSON array for the message sections.
