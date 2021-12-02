@@ -40,8 +40,8 @@ namespace Aliencube.GitHubActions.Teams.ConsoleApp
         /// <summary>
         /// Gets or sets the string representation of JSON array for the message msteams.
         /// </summary>
-        [Option("msteams", Required = false, Default = "", HelpText = "JSON for message msteams")]
-        public virtual string Msteams { get; set; }
+        [Option("mentions", Required = false, Default = "", HelpText = "JSON for message mentions")]
+        public virtual string Mentions { get; set; }
 
         /// <summary>
         /// Gets or sets the string representation of JSON array for the message sections.
