@@ -26,8 +26,8 @@ inputs:
     description: Message theme color
     required: false
     default: ''
-  msteams:
-    description: JSON array for message msteams
+  mentions:
+    description: JSON array for message mentions
     required: false
     default: ''
   sections:
@@ -52,6 +52,6 @@ runs:
     SUMMARY: ${{ inputs.summary }}
     TEXT: ${{ inputs.text }}
     THEME_COLOR: ${{ inputs.theme_color }}
-    MSTEAMS: ${{ inputs.msteams }}
+    MENTIONS: ${{ inputs.mentions }}
     SECTIONS: ${{ inputs.sections }}
     ACTIONS: ${{ inputs.actions }}
