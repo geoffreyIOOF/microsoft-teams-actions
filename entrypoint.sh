@@ -10,5 +10,6 @@ dotnet run --project src/GitHubActions.Teams.ConsoleApp -- \
     --summary "$SUMMARY" \
     --text "$TEXT" \
     --theme-color "$THEME_COLOR" \
+    --msteams "$MSTEAMS" \
     --sections "$SECTIONS" \
     --actions "$ACTIONS"
